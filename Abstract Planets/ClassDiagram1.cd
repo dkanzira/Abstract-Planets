@@ -7,5 +7,12 @@
       <FileName>Planet.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Abstract_Planets.GiantPlanet">
+    <Position X="7" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GiantPlanet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

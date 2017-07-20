@@ -7,7 +7,7 @@ using System.Text;
  * Name:Dennis Kanzira
  * Date:July 17 2017
  * Description: This is the Abstract Planet class
- * version: 0.3 - Added Public methods and Public Properties
+ * version: 0.4 - Updted Public methods and Public Properties
  * 
 */
 namespace Abstract_Planets
@@ -29,10 +29,30 @@ namespace Abstract_Planets
 
         //PUBLIC PROPERTIES
 
-        public double Diameter { get; }
-        public double Mass { get; }
+        public double Diameter
+        {
+            get
+            {
+                return this._diameter;
+            }
+                
+        }
+        public double Mass
+        {
+            get
+            {
+                return this._mass;
+            }
+        }
         public int MoonCount { get; set; }
-        public string Name { get; }
+        public string Name
+        {
+            get
+            {
+                return this._name;
+            }
+                
+        }
         public double OrbitalPeriod { get; set; }
         public int RingCount { get; set; }
         public double RotationPeriod { get; set; }
@@ -46,9 +66,9 @@ namespace Abstract_Planets
         /// <param name="mass"></param>
         public Planet(string name,double diameter,double mass)
         {
-            this.Name = name;
-            this.Diameter = diameter;
-            this.Mass = mass;
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
         }
         //OVERIDE METHOD
         /// <summary>

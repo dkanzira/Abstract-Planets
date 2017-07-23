@@ -43,6 +43,7 @@ namespace Abstract_Planets
             {
                 return this._mass;
             }
+
         }
         public int MoonCount { get; set; }
         public string Name
@@ -53,9 +54,39 @@ namespace Abstract_Planets
             }
                 
         }
-        public double OrbitalPeriod { get; set; }
-        public int RingCount { get; set; }
-        public double RotationPeriod { get; set; }
+        public double OrbitalPeriod
+        {
+            get
+            {
+                return this._orbitalPeriod;
+            }
+            set
+            {
+                this._orbitalPeriod = value;
+            }
+                }
+        public int RingCount
+        {
+            get
+            {
+                return this._ringCount;
+            }
+            set
+            {
+                this._ringCount = value;
+            }
+        }
+        public double RotationPeriod
+        {
+            get
+            {
+                return this._rotationPeriod;
+            }
+            set
+            {
+                this._rotationPeriod = value;
+            }
+        }
 
         //CONSTRUCTORS
         /// <summary>

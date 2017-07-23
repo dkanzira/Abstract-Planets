@@ -11,7 +11,7 @@ using System.Text;
 */
 namespace Abstract_Planets
 {
-    public class GiantPlanet : Planet
+    public class GiantPlanet : Planet,IHasMoons,IHasRings
     {
         //PRIVATE INSTANCE VARIBLES
         private string _type;
@@ -24,11 +24,20 @@ namespace Abstract_Planets
         /// <param name="name"></param>
         /// <param name="diameter"></param>
         /// <param name="mass"></param>
-        public GiantPlanet(string name,double diameter,double mass)
+        public GiantPlanet(string name,double diameter,double mass, string type)
             :base(name,diameter,mass)
         {
-
+            this._type = type;
         }
-        
+
+        public bool HasMoons()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool HasRings()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

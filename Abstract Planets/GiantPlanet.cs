@@ -14,7 +14,17 @@ namespace Abstract_Planets
     public class GiantPlanet : Planet,IHasMoons,IHasRings
     {
         //PRIVATE INSTANCE VARIBLES
-        private string _type;
+        private string _type
+        {
+            get
+            {
+                return this._type;
+            }
+            set
+            {
+                this._type = value;
+            }
+        }
 
         //CONSTRUCTORS --------------------------------------------
         /// <summary>
@@ -32,7 +42,11 @@ namespace Abstract_Planets
 
         public bool HasMoons()
         {
-            throw new NotImplementedException();
+            if (MoonCount>0)
+            {
+                Console.WriteLine("");
+            }
+            return true;
         }
 
         public bool HasRings()

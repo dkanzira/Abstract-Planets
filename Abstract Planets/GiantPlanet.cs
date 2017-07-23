@@ -6,7 +6,7 @@ using System.Text;
  * Name:Dennis Kanzira
  * Date:July 18 2017
  * Description: This is the Abstract Planet class
- * version: 0.4 - Created The GiantPlanet, a subClass of the Planet Class,
+ * version: 0.4 - Implemented the IHasMoons and IHasRings interfaces
  * 
 */
 namespace Abstract_Planets

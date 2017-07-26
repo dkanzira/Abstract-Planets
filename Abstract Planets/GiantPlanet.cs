@@ -51,7 +51,11 @@ namespace Abstract_Planets
 
         public bool HasRings()
         {
-            throw new NotImplementedException();
+            if (RingCount > 0)
+            {
+                Console.WriteLine("");
+            }
+            return true;
         }
     }
 }

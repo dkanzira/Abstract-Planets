@@ -6,7 +6,7 @@ using System.Text;
  * Name:Dennis Kanzira
  * Date:July 23 2017
  * Description: This is the Abstract Planet class
- * version: 0.2 -Implemented the IHasMoons and IHabitable interfaces
+ * version: 0.3 - Updated the public methods of TerrestrialPlanet
  * 
 */
 namespace Abstract_Planets
@@ -43,12 +43,20 @@ namespace Abstract_Planets
         //PUBLIC METHODS
         public bool HasMoons()
         {
-            throw new NotImplementedException();
+            if (MoonCount>0)
+            {
+                Console.WriteLine("It has more moons");
+            }
+            return true;
         }
 
         public bool Habitable()
         {
-            throw new NotImplementedException();
+            if (_oxygen==true)
+            {
+                Console.WriteLine("This planet has a high concentration of Oxygen");
+            }
+            return true;
         }
     }
 }

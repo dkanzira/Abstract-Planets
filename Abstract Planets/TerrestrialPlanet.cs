@@ -6,7 +6,7 @@ using System.Text;
  * Name:Dennis Kanzira
  * Date:July 23 2017
  * Description: This is the Abstract Planet class
- * version: 0.4 - Updated the ToString Method
+ * version: 0.5 - Deleted the ToString method
  * 
 */
 namespace Abstract_Planets
@@ -39,37 +39,31 @@ namespace Abstract_Planets
             :base(name,diameter,mass)
         {
             this._oxygen = oxygen;
+            
         }
         //PUBLIC METHODS
         public bool HasMoons()
         {
             if (MoonCount>0)
             {
-                Console.WriteLine("It has more moons");
+                return true;
             }
-            return true;
+            else {
+                return false;
+            }
+            
         }
 
         public bool Habitable()
         {
             if (_oxygen==true)
             {
-                Console.WriteLine("This planet has a high concentration of Oxygen");
+                return true;
             }
-            return true;
-        }
-        /// <summary>
-        /// This is the ToString Method
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-            string outputString = "";
-            outputString += "===========================================================\n";
-            outputString = "TerrestrialPlanet :" + this.Name +"\n";
-            outputString += "===========================================================\n";
-            outputString += "Facts:" + this.Diameter + this.Mass + this._oxygen+"\n";
-            return outputString;
+            else
+            {
+                return false;
+            }
         }
     }
 }

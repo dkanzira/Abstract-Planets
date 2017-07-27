@@ -7,7 +7,7 @@ using System.Text;
  * Name:Dennis Kanzira
  * Date:July 17 2017
  * Description: This is the Abstract Planet class
- * version: 0.4 - Updted Public methods and Public Properties
+ * version: 0.4 - Updted the ToString Method
  * 
 */
 namespace Abstract_Planets
@@ -101,14 +101,20 @@ namespace Abstract_Planets
             this._diameter = diameter;
             this._mass = mass;
         }
-        //OVERIDE METHOD
-        /// <summary>
-        /// 
+         /// <summary>
+        /// This is the ToString Method
         /// </summary>
         /// <returns></returns>
         public override string ToString()
         {
-            return string.Format("{0},{1},{2}",Name,Mass,Diameter);
+            // string outputString = "";
+            // outputString += "===========================================================\n";
+            // outputString += "GiantPlanet :" + this.Name + this.Diameter + "Kilometers" + this.Mass + "Kilograms" + "\n";
+            // outputString += "===========================================================\n";
+            // outputString += "Facts:" + this.Diameter + "Kilometers" + this.Mass + "Kilograms"+"\n";
+
+            return string.Format("Name:{0},Its Diameter:{1}km,Its Mass:{2}kg\n");
         }
+        
     }
 }

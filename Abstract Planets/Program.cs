@@ -7,7 +7,7 @@ using System.Threading.Tasks;
  * Name:Dennis Kanzira
  * Date:July 26 2017
  * Description: This is the  Program class -(Driver Class)
- * version: 0.1 - Implemented the WaitForKey method
+ * version: 0.2 - Testing the GiantPlanet class
  * 
 */
 namespace Abstract_Planets
@@ -16,19 +16,15 @@ namespace Abstract_Planets
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\n");
-
-            Console.WriteLine("\n");
-
-            Console.WriteLine("\n");
-
+            Console.WriteLine("boom");
+            GiantPlanet newPlanet = new GiantPlanet("Earth", 0.0000, 0.0000, "Gas");
+            Console.WriteLine(newPlanet.ToString());
+            WaitForAnyKey();
         }
-        public void WaitForAnyKey()
+       public static void WaitForAnyKey()
         {
             Console.ReadKey();
         }
 
-
-            
     }
 }

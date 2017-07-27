@@ -13,11 +13,7 @@ namespace Abstract_Planets
 {
     public interface IHasMoons
     {
-        //PUBLIC PROPERTY
-        //int Moons { get; set; }
-
         //PUBLIC METHODS
         bool HasMoons();
-        
     }
 }

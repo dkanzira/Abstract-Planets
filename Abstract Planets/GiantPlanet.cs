@@ -5,8 +5,8 @@ using System.Text;
 /*
  * Name:Dennis Kanzira
  * Date:July 18 2017
- * Description: This is the Abstract Planet class
- * version: 0.5 - Updated the ToString Method
+ * Description: This is the GiantPlanet a sub class of the Abstract Planet class
+ * version: 0.5 - Updated the GiantPlanet class
  * 
 */
 namespace Abstract_Planets
@@ -45,32 +45,25 @@ namespace Abstract_Planets
         {
             if (MoonCount>0)
             {
-                Console.WriteLine("");
+                return true;
             }
-            return true;
+            else
+            {
+                return false;
+            }
         }
 
         public bool HasRings()
         {
             if (RingCount > 0)
             {
-                Console.WriteLine("");
+                return true;
             }
-            return true;
-        }
-
-        /// <summary>
-        /// This is the ToString Method
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-            string outputString = "";
-            outputString += "===========================================================\n";
-            outputString += "GiantPlanet :" + this.Name + "\n";
-            outputString += "===========================================================\n";
-            outputString += "Facts:" + this.Diameter + "Km" + this.Mass + "KG" + this._type + "\n";
-            return outputString;
+            else
+            {
+                return false;
+            }
+           
         }
     }
 }

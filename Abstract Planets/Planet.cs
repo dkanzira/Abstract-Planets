@@ -5,6 +5,7 @@ using System.Text;
 
 /*
  * Name:Dennis Kanzira
+ * Student ID#:300914940 
  * Date:July 17 2017
  * Description: This is the Abstract Planet class
  * version: 0.4 - Updted the ToString Method
@@ -107,13 +108,13 @@ namespace Abstract_Planets
         /// <returns></returns>
         public override string ToString()
         {
-            // string outputString = "";
-            // outputString += "===========================================================\n";
-            // outputString += "GiantPlanet :" + this.Name + this.Diameter + "Kilometers" + this.Mass + "Kilograms" + "\n";
-            // outputString += "===========================================================\n";
-            // outputString += "Facts:" + this.Diameter + "Kilometers" + this.Mass + "Kilograms"+"\n";
-
-            return string.Format("Name:{0},Its Diameter:{1}km,Its Mass:{2}kg\n");
+            //string outputString = "";
+            //outputString += "===========================================================\n";
+            //outputString += "GiantPlanet :" + this.Name + this.Diameter + "Kilometers" + this.Mass + "Kilograms" + "\n";
+            //outputString += "===========================================================\n";
+            //outputString += "Facts:" + this.Diameter + "Kilometers" + this.Mass + "Kilograms" + "\n";
+            //return outputString;
+            return string.Format("Name:{0}\nDiameter:{1}km\nMass:{2}kg\n",this.Name,this.Diameter,this.Mass);
         }
         
     }

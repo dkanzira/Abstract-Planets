@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 /*
  * Name:Dennis Kanzira
+ * Student ID#:300914940 
  * Date:July 23 2017
  * Description: This is the Abstract Planet class
  * version: 0.5 - Deleted the ToString method
@@ -14,17 +15,7 @@ namespace Abstract_Planets
     public class TerrestrialPlanet : Planet,IHasMoons,IHabitable
     {
         //PRIVATE INSTANCE VARIABLES
-        private bool _oxygen
-        {
-            get
-            {
-                return this._oxygen;
-            }
-            set
-            {
-                this._oxygen = value;
-            }
-        }
+        private bool _oxygen;
 
         //CONSTRUCTORS ---------------------------------------------
         /// <summary>

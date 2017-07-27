@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 /*
  * Name:Dennis Kanzira
+ * Student ID#:300914940    
  * Date:July 18 2017
  * Description: This is the GiantPlanet a sub class of the Abstract Planet class
  * version: 0.5 - Updated the GiantPlanet class
@@ -14,17 +15,7 @@ namespace Abstract_Planets
     public class GiantPlanet : Planet,IHasMoons,IHasRings
     {
         //PRIVATE INSTANCE VARIBLES
-        private string _type
-        {
-            get
-            {
-                return this._type;
-            }
-            set
-            {
-                this._type = value;
-            }
-        }
+        private string _type;
 
         //CONSTRUCTORS --------------------------------------------
         /// <summary>
@@ -37,7 +28,7 @@ namespace Abstract_Planets
         public GiantPlanet(string name,double diameter,double mass, string type)
             :base(name,diameter,mass)
         {
-            this._type = type;
+            _type = type;
         }
 
         //PUBLIC METHODS

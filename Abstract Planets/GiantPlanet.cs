@@ -6,7 +6,7 @@ using System.Text;
  * Name:Dennis Kanzira
  * Date:July 18 2017
  * Description: This is the Abstract Planet class
- * version: 0.4 - Implemented the IHasMoons and IHasRings interfaces
+ * version: 0.5 - Updated the ToString Method
  * 
 */
 namespace Abstract_Planets
@@ -40,6 +40,7 @@ namespace Abstract_Planets
             this._type = type;
         }
 
+        //PUBLIC METHODS
         public bool HasMoons()
         {
             if (MoonCount>0)
@@ -56,6 +57,20 @@ namespace Abstract_Planets
                 Console.WriteLine("");
             }
             return true;
+        }
+
+        /// <summary>
+        /// This is the ToString Method
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            string outputString = "";
+            outputString += "===========================================================\n";
+            outputString += "GiantPlanet :" + this.Name + "\n";
+            outputString += "===========================================================\n";
+            outputString += "Facts:" + this.Diameter + "Km" + this.Mass + "KG" + this._type + "\n";
+            return outputString;
         }
     }
 }

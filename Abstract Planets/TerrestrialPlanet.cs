@@ -6,7 +6,7 @@ using System.Text;
  * Name:Dennis Kanzira
  * Date:July 23 2017
  * Description: This is the Abstract Planet class
- * version: 0.3 - Updated the public methods of TerrestrialPlanet
+ * version: 0.4 - Updated the ToString Method
  * 
 */
 namespace Abstract_Planets
@@ -57,6 +57,19 @@ namespace Abstract_Planets
                 Console.WriteLine("This planet has a high concentration of Oxygen");
             }
             return true;
+        }
+        /// <summary>
+        /// This is the ToString Method
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            string outputString = "";
+            outputString += "===========================================================\n";
+            outputString = "TerrestrialPlanet :" + this.Name +"\n";
+            outputString += "===========================================================\n";
+            outputString += "Facts:" + this.Diameter + this.Mass + this._oxygen+"\n";
+            return outputString;
         }
     }
 }
